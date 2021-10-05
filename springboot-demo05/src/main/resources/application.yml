@@ -1,0 +1,5 @@
+# 默认的情况下 会自动的链接本地的redis 如果本地米有redis 就会报错
+spring:
+  redis:
+    host: localhost
+    port: 6379

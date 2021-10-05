@@ -1,0 +1,10 @@
+# \u8BBE\u7F6E\u9ED8\u8BA4\u7684\u542F\u52A8\u7AEF\u53E3\u4E3A9000
+server.port=9000
+#
+jdbc.address.provience=
+jdbc.address.city
+jdbc.address.area
+jdbc.address.streat
+jdbc.passowrd=
+jdbc.username=
+jdbc.dirver=

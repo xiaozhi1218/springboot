@@ -1,0 +1,23 @@
+# 切换环境
+spring:
+  profiles:
+    active: pro
+# 开发环境
+---
+server:
+ port: 8001
+spring:
+  profiles: dev
+
+# 测试环境
+---
+server:
+ port: 8002
+spring:
+  profiles: test
+# 生产环境
+---
+server:
+ port: 8003
+spring:
+  profiles: pro

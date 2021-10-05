@@ -1,0 +1,37 @@
+# 修改端口
+server:
+  port: 9000
+
+# 自定义配置  简单的方式 配置key value
+studentname: zhangsan
+
+# 自定义配置  POJO形式的
+#student:
+#  age: 18
+#  sex: 1
+#  name: lisi
+
+# 数组类型 - 区分不同的元素 类似于 String[] cities = new String[]{"shanghai","guangzhou"}
+cities:
+  - beijing
+  - shanghai
+  - shenzhen
+  - guangzhou
+
+# 集合类型/数组形式  Student[] students = new Student[]{new Student("zhangsan",19,1)}
+students:
+  - age: 18
+    sex: 1
+    name: zhangsan
+  - age: 19
+    sex: 0
+    name: caixumou
+# map集合类型
+maps: {"name":"zhangsan", "age": "15"}
+
+# 引用类型 ${} 占位符
+mysql:
+  url: ${studentname}
+orcle:
+  url: ${studentname}
+
