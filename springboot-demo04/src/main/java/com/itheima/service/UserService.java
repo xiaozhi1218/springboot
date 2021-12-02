@@ -2,6 +2,8 @@ package com.itheima.service;
 
 import com.itheima.pojo.User;
 
+import java.util.List;
+
 /**
  * @author ljh
  * @version 1.0
@@ -13,4 +15,5 @@ public interface UserService {
     //alt + enter
     User findById(Integer id);
 
+    List<User> findAll();
 }

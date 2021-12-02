@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * @author ljh
  * @version 1.0
@@ -23,7 +25,12 @@ public class UserController {
 
     //根据ID 获取用户的信息
     @RequestMapping("/{id}")
-    public User findById(@PathVariable(name="id") Integer id){
+    public User findById(@PathVariable(name = "id") Integer id) {
         return userService.findById(id);
+    }
+
+    @RequestMapping("/findAll")
+    public List<User> findAll() {
+        return userService.findAll();
     }
 }

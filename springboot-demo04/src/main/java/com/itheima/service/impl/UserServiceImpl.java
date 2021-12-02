@@ -6,6 +6,8 @@ import com.itheima.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author ljh
  * @version 1.0
@@ -22,5 +24,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findById(Integer id) {
         return userMapper.findById(id);
+    }
+
+    @Override
+    public List<User> findAll() {
+        return userMapper.findAll();
     }
 }
