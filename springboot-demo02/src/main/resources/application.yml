@@ -6,10 +6,10 @@ server:
 studentname: zhangsan
 
 # 自定义配置  POJO形式的
-#student:
-#  age: 18
-#  sex: 1
-#  name: lisi
+student:
+  age: 18
+  sex: 1
+  name: lisi
 
 # 数组类型 - 区分不同的元素 类似于 String[] cities = new String[]{"shanghai","guangzhou"}
 cities:
